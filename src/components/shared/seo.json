@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "displayName": "Seo",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDesc": {
+      "type": "text"
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": true
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "schema": {
+      "type": "json"
+    }
+  }
+}

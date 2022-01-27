@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movie_categories",
+  "info": {
+    "singularName": "movie-category",
+    "pluralName": "movie-categories",
+    "displayName": "MovieCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "synopsis": {
+      "type": "richtext"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "other_name": {
+      "type": "string"
+    },
+    "network": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Ongoing",
+        "Completed",
+        "Upcoming"
+      ]
+    },
+    "released": {
+      "type": "date"
+    },
+    "countries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::country.country"
+    }
+  }
+}
